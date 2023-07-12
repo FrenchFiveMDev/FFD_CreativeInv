@@ -5,9 +5,9 @@ local ox_inventory = exports.ox_inventory
 RegisterCommand('creativechest', function()
   ESX.TriggerServerCallback('FFDAdmin:getUsergroup', function(group)
     if group == 'admin' or group == 'superadmin' or group == 'mod' or group == 'help' then
-      if ox_inventory:openInventory('stash', 'creativechest') == false then
+      if ox_inventory:openInventory('stash', 'admintrash') == false then
         TriggerServerEvent('ox:creativechest')
-        ox_inventory:openInventory('stash', 'creativechest')
+        ox_inventory:openInventory('stash', 'admintrash')
       end
     else 
       ESX.ShowNotification("Vous devez être admin.")
@@ -32,5 +32,4 @@ CreateThread(function()
   ESX.TriggerServerCallback('FFDAdmin:getUsergroup', function(group)
       playergroup = group
   end)
-
 end)

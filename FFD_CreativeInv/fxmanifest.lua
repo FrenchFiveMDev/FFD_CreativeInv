@@ -5,7 +5,7 @@ name 'FFD_CreativeInv'
 description 'Creative Inventory'
 author 'ffdfivem'
 
-version '1.0.0'
+version '1.0.1'
 
 client_script 'client.lua'
 

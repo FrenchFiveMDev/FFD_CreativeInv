@@ -6,4 +6,5 @@ Config.NameTrashAdmin = 'Admin Trash'
 -- Max Weight of the Chest
 Config.MaxWeight = 500000000000000000    -- 20000 = 20kg
 Config.MaxWeightTrash = 500000000000000000    -- 20000 = 20kg
-Config.MaxSlots = 1000    
+Config.MaxSlotsCreativeMenu = 1000
+Config.MaxSlotsTrash = 1000
