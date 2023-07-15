@@ -1,4 +1,4 @@
-local inventory = exports.ox_inventory
+local inventory <const> = exports.ox_inventory
 local items <const> = inventory:Items()
 
 RegisterNetEvent('ox:creativechest', function()
