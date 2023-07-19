@@ -4,6 +4,7 @@ lua54 'yes'
 name 'FFD_CreativeInv'
 description 'Creative Inventory'
 author 'ffdfivem'
+contributor 'spacev'
 
 version '1.0.2'
 
