@@ -14,6 +14,6 @@ RegisterNetEvent('ox:admintrash', function()
   local player <const> = Player(source).state
   if not (Config.groups[player.group]) then return print("Vous devez être admin.") end
   inventory:RegisterStash('admintrash', Config.NameTrashAdmin, Config.MaxSlotsTrash, Config.MaxWeightTrash, true)
-  Citizen.Wait(Config.ClearTrash)
+  Citizen.Wait(10 * 60 * 1000)
   inventory:ClearInventory('admintrash')
 end)
