@@ -5,7 +5,7 @@ RegisterNetEvent('ox:creativechest', function()
   local player <const> = Player(source).state
   if not (Config.groups[player.group]) then return print("Vous devez être admin.") end
   inventory:RegisterStash('creativechest', Config.NameCreativeMenu, Config.MaxSlotsCreativeMenu, Config.MaxWeight, true)
-  for _, item in ipairs(items) do
+  for _, item in pairs(items) do
     inventory:AddItem('creativechest', item.label, item.amount, item.data)
   end
 end)

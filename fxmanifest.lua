@@ -14,6 +14,11 @@ server_script 'server.lua'
 
 shared_script 'config.lua'
 
+escrow_ignore {
+    'client.lua',
+    'server.lua',
+    'config.lua'
+}
 
 dependencies {
     'oxmysql',
