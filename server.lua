@@ -1,5 +1,6 @@
 local inventory <const> = exports.ox_inventory
 local items <const> = inventory:Items()
+local weapons <const> = inventory:Weapons()
 
 RegisterNetEvent('ox:creativechest', function()
   local player <const> = Player(source).state
@@ -7,6 +8,10 @@ RegisterNetEvent('ox:creativechest', function()
   inventory:RegisterStash('creativechest', Config.NameCreativeMenu, Config.MaxSlotsCreativeMenu, Config.MaxWeight, true)
   for _, item in pairs(items) do
     inventory:AddItem('creativechest', item.label, item.amount, item.data)
+  end
+
+  for _, weapon in pairs(weapons) do
+    inventory:AddItem('creativechest', weapon.label, weapon.amount, weapon.data)
   end
 end)
 
