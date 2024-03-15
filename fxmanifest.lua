@@ -4,9 +4,9 @@ lua54 'yes'
 name 'FFD_CreativeInv'
 description 'Creative Inventory'
 author 'ffdfivem'
-contributor 'spacev'
+contributor 'spacev' 'Manta95'
 
-version '1.0.2'
+version '1.0.4'
 
 client_script 'client.lua'
 
