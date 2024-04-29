@@ -1,6 +1,5 @@
 local inventory <const> = exports.ox_inventory
 local items <const> = inventory:Items()
--- local weapons <const> = inventory:Weapons()
 
 RegisterNetEvent('ox:creativechest', function()
   local player <const> = Player(source).state
